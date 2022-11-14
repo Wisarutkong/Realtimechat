@@ -1,0 +1,48 @@
+.chat{
+    background: #FFFFFF;
+}
+.chat-con{
+    width: 1440px;
+    height: 800px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-title h2{
+    font-size: 64px;
+    margin-bottom: 1rem;
+}
+.chat-info{
+    width: 363px;
+}
+.chat-info p{
+    font-size: 40px;
+}
+
+.chat-img img{
+    width: 100%;
+}
+
+.friends-con{
+    width: 1440px;
+    height:800px ;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friends-title{
+    width: 350px;
+}
+.friends-title h3{
+    font-size: 64px;
+    margin-bottom: 1rem;
+}
+.friends-info{
+    width: 350px;
+}
+.friends-info p{
+    font-size: 40px;
+}
