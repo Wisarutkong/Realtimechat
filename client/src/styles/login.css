@@ -9,8 +9,8 @@
 
 .login-all {
     height: 100vh;
-    background: url('../img/BackgroundLogin.svg') no-repeat;
     width: 100%;
+    background: url('../img/BackgroundLogin.svg') no-repeat;
     color: #000;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@ span {
 }
 
 .login-register {
-    height: auto;
+    height: 30px;
     margin-top: 25px;
     font-size: 12px;
     margin-left: 15px;

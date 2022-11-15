@@ -29,16 +29,16 @@ const SignUp = () => {
     return (
         <Formik
             initialValues={{ username: "", password: "" }}
-            // validationSchema={Yup.object({
-            //     username: Yup.string()
-            //         .required("Username required!")
-            //         .min(6, "Username too short!")
-            //         .max(28, "Username too long!"),
-            //     password: Yup.string()
-            //         .required("Password required!")
-            //         .min(6, "Password too short!")
-            //         .max(28, "Password too long!")
-            // })}
+            validationSchema={Yup.object({
+                username: Yup.string()
+                    .required("Username required!")
+                    .min(6, "Username too short!")
+                    .max(28, "Username too long!"),
+                password: Yup.string()
+                    .required("Password required!")
+                    .min(6, "Password too short!")
+                    .max(28, "Password too long!")
+            })}
             onSubmit={(values, actions) => {
                 const vals = { ...values };
                 actions.resetForm();
@@ -89,16 +89,13 @@ const SignUp = () => {
                             <div className='create-title'>
                                 <h1>Create an account</h1>
                             </div>
-                            <Text as="i" color="red.500" >
-                                {error}
-                            </Text>
+
                             <div className='create-register'>
                                 <div className='create-username'>
                                     <p>USERNAME</p>
                                     <TextField
                                         w={{ base: "90%", md: "380px" }}
                                         height="30px"
-                                        justify="center"
                                         className="textboxregister"
                                         name="username"
                                         placeholder=""
@@ -106,12 +103,6 @@ const SignUp = () => {
                                     />
                                 </div>
 
-                                {/* <TextField
-                        name="email"
-                        placeholder=""
-                        autoComplete="off"
-                        label="Email"
-                    /> */}
                                 <div className='create-password'>
                                     <p>PASSWORD</p>
                                     <TextField
@@ -124,14 +115,9 @@ const SignUp = () => {
                                         type="password"
                                     />
                                 </div>
-
-                                {/* <TextField
-                        name="confirmpassword"
-                        placeholder=""
-                        autoComplete="off"
-                        label="Confirm Password"
-                        type="password"
-                    /> */}
+                                <Text as="i" color="red.500" >
+                                    {error}
+                                </Text>
                                 <div className='btn-continue'>
                                     <ButtonGroup >
                                         <Button
@@ -152,6 +138,9 @@ const SignUp = () => {
                                             <h1>Back</h1>
                                         </Button>
                                     </ButtonGroup>
+                                    <div className='login-registers'>
+                                        <p></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
